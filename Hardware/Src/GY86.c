@@ -1,8 +1,9 @@
 #include "stm32f4xx.h"                  // Device header
+#include "Delay.h"
+
 #include "HMC5883L.h"
 #include "MPU.h"
-#include "Delay.h"
-#include "GY86.h"
+
 #include "Quaternion.h"
 #include "Madgwick.h"
 #include "Acc.h"

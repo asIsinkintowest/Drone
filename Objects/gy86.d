@@ -1,7 +1,7 @@
 .\objects\gy86.o: Hardware\Src\GY86.c
 .\objects\gy86.o: .\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\objects\gy86.o: .\Libraries\CMSIS\Include\core_cm4.h
-.\objects\gy86.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gy86.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\gy86.o: .\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\gy86.o: .\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\gy86.o: .\Libraries\CMSIS\Include\core_cmSimd.h
@@ -27,10 +27,10 @@
 .\objects\gy86.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
 .\objects\gy86.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
 .\objects\gy86.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
+.\objects\gy86.o: .\System\Inc\Delay.h
 .\objects\gy86.o: .\Hardware\Inc\HMC5883L.h
 .\objects\gy86.o: .\Hardware\Inc\MPU.h
-.\objects\gy86.o: .\System\Inc\Delay.h
-.\objects\gy86.o: .\Hardware\Inc\GY86.h
-.\objects\gy86.o: .\Software\Inc\Acc.h
 .\objects\gy86.o: .\Software\Inc\Quaternion.h
 .\objects\gy86.o: .\Software\Inc\Madgwick.h
+.\objects\gy86.o: .\Hardware\Inc\GY86.h
+.\objects\gy86.o: .\Software\Inc\Acc.h

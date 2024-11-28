@@ -630,10 +630,10 @@ ARM Macro Assembler    Page 10
               E000ED04 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp --apcs=int
 erwork --depend=.\objects\os_cpu_a.d -o.\objects\os_cpu_a.o -I.\RTE\_Project_Ne
-w -IC:\Users\Lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.17.1\Drivers\C
-MSIS\Device\ST\STM32F4xx\Include -IC:\Keil_v5\ARM\CMSIS\Include --predefine="__
-MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 527" --predefine="STM32F40
-1xE SETA 1" --list=.\listings\os_cpu_a.lst Ports\os_cpu_a.asm
+w -ID:\Tools\keil\pack\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F
+4xx\Include -ID:\Tools\keil\ARM\CMSIS\Include --predefine="__MICROLIB SETA 1" -
+-predefine="__UVISION_VERSION SETA 527" --predefine="STM32F401xE SETA 1" --list
+=.\listings\os_cpu_a.lst Ports\os_cpu_a.asm
 
 
 

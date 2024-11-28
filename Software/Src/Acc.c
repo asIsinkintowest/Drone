@@ -6,14 +6,11 @@
 #include "OLED.h"
 #include "GY86.h"
 
-
-
 #define LEARNING_RATE 0.001
 #define MAX_ITERATIONS 7500
 
 const float ACC_NORM = 1.0;
 const float MAG_NORM = 0.5;
-
 
 // 计算校准后的向量模
 float vector_norm(Vector3f_t v) {
@@ -44,15 +41,6 @@ void Step_Grad(Vector3f_t* offset, Vector3f_t* scale,int dataSize,Vector3f_t Dat
 	float grad_scale_x =0, grad_scale_y =0, grad_scale_z=0;
 	
 	float norm = ACC_NORM;
-	
-//	if(flag > 0){
-////		grad_scale_x = 1, grad_scale_y = 1, grad_scale_z = 1;
-//		norm = ACC_NORM;
-//	}else if(flag < 0){
-////	    grad_scale_x = 2, grad_scale_y = 2, grad_scale_z = 2;
-//		norm = MAG_NORM;
-//		
-//	}
     
 	for(int i=0;i<dataSize;i++){
 		
@@ -93,7 +81,7 @@ void Step_Grad(Vector3f_t* offset, Vector3f_t* scale,int dataSize,Vector3f_t Dat
 	
 }
 
-
+//梯度下降
 void gradientDescent(Vector3f_t accData[],Vector3f_t magData[],int dataSize,Vector3f_t* offset_a,Vector3f_t* scale_a,Vector3f_t* offset_m,Vector3f_t* scale_m)
 {
 	//设置初始值
@@ -122,6 +110,7 @@ void gradientDescent(Vector3f_t accData[],Vector3f_t magData[],int dataSize,Vect
 	}
 }
 
+//初始化Scale矩阵 和 Offset矩阵
 void SO_Init(Vector3f_t * offset_a, Vector3f_t* offset_g ,Vector3f_t* offset_m, Vector3f_t* scale_a, Vector3f_t* scale_m){
 	offset_a->x = 0.0f;
 	offset_a->y = 0.0f;

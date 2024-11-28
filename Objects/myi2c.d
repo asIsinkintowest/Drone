@@ -1,7 +1,7 @@
 .\objects\myi2c.o: Hardware\Src\MyI2C.c
 .\objects\myi2c.o: .\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\objects\myi2c.o: .\Libraries\CMSIS\Include\core_cm4.h
-.\objects\myi2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\myi2c.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\myi2c.o: .\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\myi2c.o: .\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\myi2c.o: .\Libraries\CMSIS\Include\core_cmSimd.h

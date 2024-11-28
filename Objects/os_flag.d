@@ -1,8 +1,8 @@
 .\objects\os_flag.o: Source\os_flag.c
 .\objects\os_flag.o: .\Source\ucos_ii.h
 .\objects\os_flag.o: .\Cfg\app_cfg.h
-.\objects\os_flag.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\os_flag.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\os_flag.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\os_flag.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\os_flag.o: .\Cfg\os_cfg.h
 .\objects\os_flag.o: .\Ports\os_cpu.h
 .\objects\os_flag.o: .\Source\os_trace.h

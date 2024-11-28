@@ -1,7 +1,7 @@
 .\objects\oled.o: Hardware\Src\OLED.c
 .\objects\oled.o: .\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\objects\oled.o: .\Libraries\CMSIS\Include\core_cm4.h
-.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\oled.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\oled.o: .\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\oled.o: .\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\oled.o: .\Libraries\CMSIS\Include\core_cmSimd.h
@@ -27,5 +27,5 @@
 .\objects\oled.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_usart.h
 .\objects\oled.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_wwdg.h
 .\objects\oled.o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
-.\objects\oled.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\oled.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\oled.o: .\Hardware\Inc\OLED_Font.h

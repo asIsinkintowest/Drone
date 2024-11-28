@@ -1,8 +1,8 @@
 .\objects\os_mbox.o: Source\os_mbox.c
 .\objects\os_mbox.o: .\Source\ucos_ii.h
 .\objects\os_mbox.o: .\Cfg\app_cfg.h
-.\objects\os_mbox.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\os_mbox.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\os_mbox.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\os_mbox.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\os_mbox.o: .\Cfg\os_cfg.h
 .\objects\os_mbox.o: .\Ports\os_cpu.h
 .\objects\os_mbox.o: .\Source\os_trace.h

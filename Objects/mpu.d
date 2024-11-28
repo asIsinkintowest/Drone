@@ -1,7 +1,7 @@
 .\objects\mpu.o: Hardware\Src\MPU.c
 .\objects\mpu.o: .\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\objects\mpu.o: .\Libraries\CMSIS\Include\core_cm4.h
-.\objects\mpu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\mpu.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\mpu.o: .\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\mpu.o: .\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\mpu.o: .\Libraries\CMSIS\Include\core_cmSimd.h
@@ -30,6 +30,6 @@
 .\objects\mpu.o: .\Hardware\Inc\MyI2C.h
 .\objects\mpu.o: .\Hardware\Inc\MPU.h
 .\objects\mpu.o: .\Hardware\Inc\MPU6050Adress.h
-.\objects\mpu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
-.\objects\mpu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\mpu.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\mpu.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\mpu.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\mpu.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\math.h
