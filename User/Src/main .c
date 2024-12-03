@@ -90,7 +90,7 @@ void Task_GY86(){
 		
 		OSMutexPost(IICMutex);	
 		
-		OSTimeDlyHMSM(0,0,0,5);
+		OSTimeDlyHMSM(0,0,0,10);
 	};
 }
 
@@ -107,12 +107,12 @@ void Task_Anto(){
 		}
 		
 		OSMutexPend(IICMutex, 0, &err);
-		//向上位机发送四元数
+		//向上位机发送欧拉角
 		ANO_Send03(roll,pitch,yaw,1);
 		
 		OSMutexPost(IICMutex);
 		
-		OSTimeDlyHMSM(0,0,0,5);
+		OSTimeDlyHMSM(0,0,0,10);
 	}
 		
 }
@@ -150,20 +150,30 @@ void Task_PID(){
 void Task_OLED(){
 	
 	INT8U err;
+	int count = 0;
 	
 	while(1){
 
+		if(count > 100){
+			count = 0;
+		}
+		count++;
+		OLED_ShowNum(1,1,count,3);
 		OSMutexPend(IICMutex, 0, &err);
 		
-		OLED_ShowNum(1,1,(PPM_data[0] - 316)/1.6,5);
-		OLED_ShowNum(2,1,(PPM_data[1] - 316)/1.6,5);
-		OLED_ShowNum(3,1,(PPM_data[2] - 316)/1.6,5);
-		OLED_ShowNum(4,1,(PPM_data[3] - 316)/1.6,5);  
+		OLED_ShowFloat(2,1,gy86_data.ax,5);
+		OLED_ShowFloat(3,1,gy86_data.ay,5);
+		OLED_ShowFloat(4,1,gy86_data.az,5);
 		
-		OLED_ShowNum(1,7,(PPM_data[4] - 316)/1.6,5);
-		OLED_ShowNum(2,7,(PPM_data[5] - 316)/1.6,5);
-		OLED_ShowNum(3,7,(PPM_data[6] - 316)/1.6,5);
-		OLED_ShowNum(4,7,(PPM_data[7] - 316)/1.6,5);
+//		OLED_ShowNum(1,1,(PPM_data[0] - 316)/1.6,5);
+//		OLED_ShowNum(2,1,(PPM_data[1] - 316)/1.6,5);
+//		OLED_ShowNum(3,1,(PPM_data[2] - 316)/1.6,5);
+//		OLED_ShowNum(4,1,(PPM_data[3] - 316)/1.6,5);  
+//		
+//		OLED_ShowNum(1,7,(PPM_data[4] - 316)/1.6,5);
+//		OLED_ShowNum(2,7,(PPM_data[5] - 316)/1.6,5);
+//		OLED_ShowNum(3,7,(PPM_data[6] - 316)/1.6,5);
+//		OLED_ShowNum(4,7,(PPM_data[7] - 316)/1.6,5);
 		
 		OSMutexPost(IICMutex);
 		
@@ -178,10 +188,10 @@ void Task_Start(){
 	
 	Serial_Init();//
 	GY86_Init();
-	Quater_Init(&quaternion_data,  0.824, 0.080,  0.001,  -0.561);
-	PID_Init();
-	IC_Init();
-	Motor_Init();
+	Quater_Init(&quaternion_data,  1, 0,  0, 0);
+//	PID_Init();
+//	IC_Init();
+//	Motor_Init();
 	OLED_Init();
 	
 	OLED_Clear();
@@ -192,12 +202,12 @@ void Task_Start(){
 
 	OSTaskCreate(Task_GY86,(void *)0,(OS_STK*)&GY86_TASK_STK[GY86_STK_SIZE-1],GY86_TASK_PRIO);
 	OSTaskCreate(Task_Anto,(void *)0,(OS_STK*)&Anto_TASK_STK[Anto_STK_SIZE-1],Anto_TASK_PRIO);
-	OSTaskCreate(Task_PID,(void *)0,(OS_STK*)&PID_TASK_STK[PID_STK_SIZE-1],PID_TASK_PRIO);
+//	OSTaskCreate(Task_PID,(void *)0,(OS_STK*)&PID_TASK_STK[PID_STK_SIZE-1],PID_TASK_PRIO);
 	OSTaskCreate(Task_OLED,(void *)0,(OS_STK*)&OLED_TASK_STK[OLED_STK_SIZE-1],OLED_TASK_PRIO);
 	
 	OSTaskNameSet(GY86_TASK_PRIO,(void *)"Task_GY86",NULL);
 	OSTaskNameSet(Anto_TASK_PRIO,(void *)"Task_Anto",NULL);
-	OSTaskNameSet(PID_TASK_PRIO,(void *)"Task_PID",NULL);
+//	OSTaskNameSet(PID_TASK_PRIO,(void *)"Task_PID",NULL);
 	OSTaskNameSet(OLED_TASK_PRIO,(void *)"Task_OLED",NULL);
 	
 	OSTaskDel(OS_PRIO_SELF);

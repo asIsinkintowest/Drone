@@ -1,7 +1,7 @@
 .\objects\hmc5883l.o: Hardware\Src\HMC5883L.c
 .\objects\hmc5883l.o: .\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\objects\hmc5883l.o: .\Libraries\CMSIS\Include\core_cm4.h
-.\objects\hmc5883l.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\hmc5883l.o: C:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\hmc5883l.o: .\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\hmc5883l.o: .\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\hmc5883l.o: .\Libraries\CMSIS\Include\core_cmSimd.h
@@ -30,4 +30,4 @@
 .\objects\hmc5883l.o: .\Hardware\Inc\MyI2C.h
 .\objects\hmc5883l.o: .\Hardware\Inc\HMC5883L.h
 .\objects\hmc5883l.o: .\Hardware\Inc\HMC5883LAdress.h
-.\objects\hmc5883l.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\math.h
+.\objects\hmc5883l.o: C:\Keil5\ARM\ARMCC\Bin\..\include\math.h

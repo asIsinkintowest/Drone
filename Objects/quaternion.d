@@ -1,7 +1,7 @@
 .\objects\quaternion.o: Software\Src\Quaternion.c
 .\objects\quaternion.o: .\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\objects\quaternion.o: .\Libraries\CMSIS\Include\core_cm4.h
-.\objects\quaternion.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\quaternion.o: C:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\quaternion.o: .\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\quaternion.o: .\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\quaternion.o: .\Libraries\CMSIS\Include\core_cmSimd.h

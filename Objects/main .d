@@ -1,7 +1,7 @@
 .\objects\main .o: User\Src\main .c
 .\objects\main .o: .\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\objects\main .o: .\Libraries\CMSIS\Include\core_cm4.h
-.\objects\main .o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\main .o: C:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\main .o: .\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\main .o: .\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\main .o: .\Libraries\CMSIS\Include\core_cmSimd.h
@@ -29,8 +29,8 @@
 .\objects\main .o: .\Libraries\STM32F4xx_StdPeriph_Driver\inc\misc.h
 .\objects\main .o: .\Source\ucos_ii.h
 .\objects\main .o: .\Cfg\app_cfg.h
-.\objects\main .o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\main .o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main .o: C:\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\main .o: C:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\main .o: .\Cfg\os_cfg.h
 .\objects\main .o: .\Ports\os_cpu.h
 .\objects\main .o: .\Source\os_trace.h

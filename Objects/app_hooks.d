@@ -2,8 +2,8 @@
 .\objects\app_hooks.o: .\Source\os.h
 .\objects\app_hooks.o: .\Source\ucos_ii.h
 .\objects\app_hooks.o: .\Cfg\app_cfg.h
-.\objects\app_hooks.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdarg.h
-.\objects\app_hooks.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\app_hooks.o: C:\Keil5\ARM\ARMCC\Bin\..\include\stdarg.h
+.\objects\app_hooks.o: C:\Keil5\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\app_hooks.o: .\Cfg\os_cfg.h
 .\objects\app_hooks.o: .\Ports\os_cpu.h
 .\objects\app_hooks.o: .\Source\os_trace.h

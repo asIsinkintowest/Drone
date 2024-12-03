@@ -1,7 +1,7 @@
 .\objects\anto.o: Software\Src\Anto.c
 .\objects\anto.o: .\Libraries\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
 .\objects\anto.o: .\Libraries\CMSIS\Include\core_cm4.h
-.\objects\anto.o: D:\Tools\keil\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\anto.o: C:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 .\objects\anto.o: .\Libraries\CMSIS\Include\core_cmInstr.h
 .\objects\anto.o: .\Libraries\CMSIS\Include\core_cmFunc.h
 .\objects\anto.o: .\Libraries\CMSIS\Include\core_cmSimd.h
